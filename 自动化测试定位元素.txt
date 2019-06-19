@@ -1,0 +1,20 @@
+实例：（今日头条）web页面
+该网站做了ajax异步分页处理：简单的来说就是使用不重新加载页面就获得服务器的
+内容的一个技术.
+
+
+如何通过超链接上面的文本内容来定位元素
+1、find_element_by_link_text
+xpath
+2、/选取子节点，//选取子孙节点
+
+滚动条控制：
+1、Var q = document.documentElement.scrollTop，这种写法是为了兼容ie低版本和其他浏览器，scrollTop为0时，滚动条
+在最上方，为100000在最下方。
+
+各浏览器下scrollTop的差异
+IE6/7/8：document.documentElement.scrollTop
+IE9及以上：window.pageYOffset或document.documentElement.scrollTop
+Safari:window.pageYOffset与document.bady.scrollTop
+Filebox:最省心，直接用window.pageYOffset或者document.documentElement.scrollTop
+Chrome:只认识document.body.scrollTop
